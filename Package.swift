@@ -3,7 +3,7 @@
 import PackageDescription
 
 let baseURL = "https://github.com/adison-ads/cookie-oven-series"
-let artifactVer = "3.7.0"
+let artifactVer = "3.6.2"
 let checksum = "2341873503h4o13hrfp9huf9"
 
 let package = Package(
@@ -11,7 +11,7 @@ let package = Package(
     products: [
         .library(
             name: "CookieOvenSeries",
-            targets: ["CookieOvenSeries", "_CookieOvenSeriesTarget"]
+            targets: ["BinaryWrapper"]
         )
     ],
     dependencies: [
@@ -25,8 +25,9 @@ let package = Package(
             checksum: checksum
         ),
         .target(
-            name: "_CookieOvenSeriesTarget",
+            name: "BinaryWrapper",
             dependencies: [
+                "CookieOvenSeries",
                 .product(name: "AdisonOfferwallSDK", package: "adison-offerwall-ios-sdk"),
                 .product(name: "Lottie", package: "lottie-spm"),
             ],
