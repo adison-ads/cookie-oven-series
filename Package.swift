@@ -3,11 +3,14 @@
 import PackageDescription
 
 let baseURL = "https://github.com/adison-ads/cookie-oven-series"
-let artifactVer = "3.6.2"
-let checksum = "2341873503h4o13hrfp9huf9"
+let artifactVer = "3.7.0"
+let checksum = "0eb95c9f3c4ee0131aaab33bb6c4ef1ebc6bf4adce6248cf2cef94797b322aa6"
 
 let package = Package(
     name: "CookieOvenSeries",
+    platforms: [
+        .iOS(.v13)
+    ],
     products: [
         .library(
             name: "CookieOvenSeries",
@@ -15,7 +18,7 @@ let package = Package(
         )
     ],
     dependencies: [
-        .package(url: "https://github.com/adison-ads/adison-offerwall-ios-sdk", exact: "4.6.0"),
+        .package(url: "https://github.com/adison-ads/adison-offerwall-ios-sdk", exact: "4.7.0"),
         .package(url: "https://github.com/airbnb/lottie-spm.git", from: "4.0.0"),
     ],
     targets: [
