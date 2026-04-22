@@ -3,8 +3,8 @@
 import PackageDescription
 
 let baseURL = "https://github.com/adison-ads/cookie-oven-series"
-let artifactVer = "3.7.6"
-let checksum = "bf201750548d67d17d09f4e17bbb0eb42d7e42e460d46af2ceb47ad322e08bad"
+let artifactVer = "3.7.8"
+let checksum = "fef9a426c382cab74ef1c7a4f896d7ea752fe42fd70f3cd8ed0e2b959c981dba"
 
 let package = Package(
     name: "CookieOvenSeries",
